@@ -3,6 +3,10 @@
 			
 			===== Revisão/base de conhecimento em redes =====
 
+	
+	comunicação simples:
+	iniciar -> barra de pesquisa -> digite:ex:  \\xxx.xxx.xxx.xxx    (ip de destino) 
+
 
 	equipamentos:
 	
