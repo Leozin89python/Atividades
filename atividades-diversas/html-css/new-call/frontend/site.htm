@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>data&copy;</title>
+        <link rel="stylesheet" href="site.css">
+    </head>
+    <body>
+        <h1>Data Result</h1>
+
+        <button onclick="">data</button>
+        <script src="../backend/banco/banco.js"></script>
+        <script>
+            function callHim(e) {
+                e.preventDefault()
+
+                const url = '../backend/banco/banco.json'
+
+                fetch(url)
+                    .then(res => {
+                        res.json()
+                    })
+                    .then(info => info.map( data =>{
+                        (elements) = `${data.name}`,``
+                    })
+                        
+                 )
+            }
+        </script>
+    </body>
+</html>

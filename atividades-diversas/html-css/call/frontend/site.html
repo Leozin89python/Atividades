@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data&copy;</title>
+</head>
+<body>
+    <h3>dados:</h3>
+
+    <script>
+    
+            const url = '../../backend/db.json' 
+
+            fetch(url)   
+            .then(res => res.json())
+            .then(info =>   {
+                const e = info.reduce(
+                    (html,infor) => html + `<li>${infor.name}</li>` , `` 
+                )
+                document.body.insertAdjacentHTML("beforeend",`<ul> ${e} </ul>`)
+            })
+
+            
+            fetch(url)   
+            .then(res => res.json())
+            .then(info =>   {
+                const e = info.reduce(
+                    (html,infor) => html + `<li>${infor.email}</li>` , `` 
+                )
+                document.body.insertAdjacentHTML("beforeend",`<ul> ${e} </ul>`)
+            })
+                
+                
+   
+    </script>
+</body>
+
+</html>
