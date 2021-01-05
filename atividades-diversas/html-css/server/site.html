@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies&copy;</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header>
+        <h1>Movies&trade;</h1>
+    </header>
+
+    <script>
+
+        function requestParams(settings){
+            var xht = new XMLHttpRequest()
+            xht.open(settings.method, settings.url , true)
+
+            xht.onload = event =>   {
+                if(xht.status === 200){
+                    settings.success(xht.response)
+                }else if(xht.status >= 400){
+                    settings.err({
+                        code: xht.status,
+                        text: xht.statusText
+                    })
+                } 
+            }
+            xht.send()
+        }
+
+        requestParams({
+                url:"Db/db.json",
+                method:"get",
+                success (res){
+                    const cinemark = JSON.parse(res)
+
+                    const rows = cinemark.map(  section =>{
+                        const artist = document.createElement('td')
+                        artist.innerHTML = section.artist
+                       
+                        const movie = document.createElement('td')
+                        movie.innerHTML = section.movie
+
+                        const year = document.createElement('td')
+                        year.innerHTML = section.year
+
+                        const director = document.createElement('td')
+                        director.innerHTML = section.director
+
+                        const rows = document.createElement('tr')
+
+                        rows.appendChild(artist)
+                        rows.appendChild(movie)
+                        rows.appendChild(year)
+                        rows.appendChild(director)
+
+                        return rows
+                    })
+
+                     const page = document.createElement('table')
+                     rows.forEach(productionCinematograph => page.appendChild(productionCinematograph))
+                     document.body.appendChild(page)
+                },
+                err(e){
+                    const alert = document.createTextNode(`${ e.code} : ${e.text}`)
+                    document.body.appendChild(alert)
+                }
+        })
+    </script>
+</body>
+</html>

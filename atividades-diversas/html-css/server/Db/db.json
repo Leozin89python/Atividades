@@ -1,0 +1,62 @@
+[
+
+
+	{
+	"artist":"Michael J. Fox",
+	"movie":"come back to the future",
+	"year":"1993",
+	"director":null
+	},{
+	"artist":"Sigourney weaver",
+	"movie":"alien",
+	"year":"1969",
+	"director":"Riddley Scott"
+	},{
+	"artist":"Naomi Watts",
+	"movie":"king kong",
+	"year":"2005",
+	"director":"Peter Jackson"
+	},{
+	"artist":"Tobey Maguire",
+	"movie":"spiderman",
+	"year":"2002",
+	"director":"Sam Raimi"
+	},{
+	"artist":"Johnny deep",
+	"movie":"edward scissors hand",
+	"year":"1991",
+	"director":"Tim Burton"
+	},{
+	"artist":"Tom Cruise",
+	"movie":"collateral",
+	"year":null,
+	"director":"Michael Mann"
+	},{
+	"artist":"Crhistian Bale",
+	"movie":"batman: the dark knight",
+	"year":"2008",
+	"director":"Cristopher Nolan"
+	},{
+	"artist":"Will Smith",
+	"movie":"independency day",
+	"year":"1999",
+	"director":null
+	},{
+	"artist":"Keanu Reeves",
+	"movie":"matrix",
+	"year":"1999",
+	"director":"the Wacholsky brothers"	
+	},{
+	"artist":"Eric Bana",
+	"movie":"hulk",
+	"year":"2003",
+	"director":"Ang Lee"	
+	},{
+	"artist":"Marlon Brando",
+	"movie":"the goodfather",
+	"year":null,
+	"director":"Francis Ford Coppola"	
+	}	
+
+
+]

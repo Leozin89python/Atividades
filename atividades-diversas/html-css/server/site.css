@@ -1,0 +1,9 @@
+body{
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: fantasy;
+}
+header{
+background: linear-gradient(97deg, gold 45%, yellow 55%);
+text-shadow: 1px 1px 1px red;
+}
