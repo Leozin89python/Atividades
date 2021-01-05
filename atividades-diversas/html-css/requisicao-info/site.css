@@ -1,0 +1,26 @@
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: fantasy;
+    margin-top: 5%; 
+}
+header{
+    padding: 1%;
+    background: linear-gradient(45deg, gold 45%, whitesmoke 55%);
+    border-radius: 10px;
+    border-bottom: 10%;
+}
+b{
+    color:gold;
+    text-shadow: 1px 1px 1px black;
+}
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkred;
+}

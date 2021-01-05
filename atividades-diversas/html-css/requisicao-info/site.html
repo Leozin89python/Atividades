@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company&copy;</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header>
+        <h1>COMPANY<b>&trade;</b></h1>
+    </header>
+
+    
+    <script>
+        function Ajax(sett){
+            
+            var xhr = new XMLHttpRequest()
+            xhr.open(sett.method,sett.url,true)
+
+            xhr.onload = event => {
+                if(xhr.status === 200){
+                    sett.success(xhr.response)
+                }else if(xhr.status >= 400){
+                        sett.problem({
+                            code:xhr.status,
+                            info:xhr.statusText
+                        })
+                }
+            }
+            xhr.send()
+        }
+
+        Ajax({
+                url:'db/db.json',
+                method:'get',
+                success (res) {
+                    const information = JSON.parse(res)
+
+                    const rows = information.map( inform =>{
+
+                        const product = document.createElement('td')
+                        product.innerHTML = inform.product
+
+                        const price = document.createElement('td')
+                        price.innerHTML = inform.price
+
+
+
+
+                        const row = document.createElement('tr')
+                        row.appendChild(product)
+                        row.appendChild(price)
+
+                        return row
+                    })
+
+                     const page = document.createElement('table')
+                     rows.forEach(companyInformation => page.appendChild(companyInformation))
+                     document.body.appendChild(page)
+
+                },
+                problem(e){
+                    const alert = document.createTextNode(`${ e.code} : ${e.info}`)
+                    document.body.appendChild(alert)
+                }
+            })
+
+    </script>
+    <script src="./servidor/servidor.js"></script>    
+    
+    <footer>
+        <h3>
+            this is frontend of your application
+        </h3>
+    </footer>
+</body>
+</html>
