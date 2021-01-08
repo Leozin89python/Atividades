@@ -1,0 +1,218 @@
+			    === src/components/db.js ===
+
+
+
+
+
+const ATENDIMENTO = '_ATENDIMENTO'
+
+export default class Chamada {
+
+    renderizar = () => {
+        const atendidos = localStorage.getItem(ATENDIMENTO ) 
+        return JSON.parse(atendidos)
+    }
+
+    enviar = (atendido) => {
+      let atendidos = localStorage.getItem(ATENDIMENTO ) 
+      if(!atendidos){
+        atendidos = []
+      }else{
+        atendidos = JSON.parse(atendidos)
+      }
+
+      atendidos.push(atendido)
+      localStorage.setItem(ATENDIMENTO, JSON.stringify(atendidos))
+
+    }
+}
+
+
+
+
+
+
+
+
+			  === src/components/consulta.js ===
+
+
+
+import React, {Component} from 'react'
+import DB from './consulta'
+
+export default class Consulta extends Component{
+  constructor(){
+    super()
+    this.Banco = new DB()
+  }
+
+state = {
+  atendimentos : []
+}
+
+componentDidMount = () =>{
+    const conteudo = this.Banco.renderizar()
+    this.setState({
+    atendimentos: conteudo
+  })
+}
+
+
+    render(){
+      return(
+          <React.Fragment>
+              <h3>Atendimentos</h3>
+
+              <table border="1px"> 
+                  <thead>
+                      <tr>
+                        <td>nome</td>
+                        <td>telefone</td>
+                        <td>oferta</td>
+                        <td>feedback</td>
+                      </tr>
+                  </thead>
+
+                  <tbody> 
+                      {
+                        this.state.atendimentos.map( (e,index)  =>{
+                           return(
+                               <tr key={index}>
+                                  <td>{e.nome}</td>
+                                  <td>{e.telefone}</td>
+                                  <td>{e.oferta}</td>
+                                  <td>{e.feedback}</td>
+                            </tr>
+                           )
+                        })
+                      }
+                  </tbody>
+              </table>
+          </React.Fragment>
+      )
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+				=== src/App ===
+
+
+
+import React, { Component } from "react";
+import DB from './components/db'
+import Consulta from './components/consulta'
+
+
+export default class App extends Component {
+  constructor(){
+      super()
+      this.Banco = new DB() 
+  }
+
+  state =     {
+    nome:'',
+    telefone:'',
+    oferta:[],
+    feedback:[]
+  }
+
+limpar = () => {
+  this.setState({
+    nome:'',
+    telefone:'',
+    oferta:[],
+    feedback:[]
+  })
+}
+
+capturar = (event) => {
+  let valor = event.target.value
+  let nome = event.target.name
+  this.setState({
+    [nome]:valor
+  })
+}
+
+enviar = () =>  {
+  let salvar = {
+    nome:this.state.nome,
+    telefone:this.state.telefone,
+    oferta:this.state.oferta,
+    feedback:this.state.feedback
+  }
+  this.Banco.enviar(salvar)
+}
+
+  render() {
+    return (
+      <div>
+          <h2>administração de serviço de call center</h2>
+
+          <label> nome: * </label>
+          <input 
+            name="nome"
+            type="text"
+            placeholder="Alexadre o grande"
+            value={this.state.nome}
+            onChange={this.capturar}
+          />
+          <br/>
+
+          <label> telefone: * </label>
+          <input 
+            name="telefone"
+            type="number"
+            placeholder="75984576589"
+            value={this.state.telefone}
+            onChange={this.capturar}
+          />
+          <br/>
+          <br/>
+
+           <label> oferta: * </label>
+            <select 
+              name="oferta"
+              value={this.state.oferta}
+              onChange={this.capturar}>
+                <option>barato</option>
+                <option>baratissimo</option>
+                <option>baratão</option>
+                <option>quase de graça</option>
+            </select>
+          <br/>
+          <br/>
+
+           <label> feedback: * </label>
+           <select
+            name="feedback"
+            value={this.state.feedback}
+            onChange={this.capturar}>
+                <option>sim</option>
+                <option>não</option>
+           </select>
+           <br/>
+          <br/>
+          <button onClick={this.enviar}>enviar</button>
+          <button onClick={this.limpar}>limpar</button>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+	  <hr/>
+          <Consulta/>
+      </div>
+    );
+  }
+}
