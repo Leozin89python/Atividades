@@ -1,0 +1,8 @@
+show dbs
+use workshop_mongo
+db.createCollection('user')
+db.user
+db.user.insert({name:'fulano de tal',email:'fulano@outlook.com'})
+db.user.insert({name:'Roman Polanski',email:'opianista@warner.com'})
+db.user.find( )
+db.user.findOne( )
