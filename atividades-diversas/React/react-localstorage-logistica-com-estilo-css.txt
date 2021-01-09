@@ -1,0 +1,407 @@
+			
+				
+			=== src/components/db.js ===
+
+
+
+const LOGISTICA = '_LOGISTICA'
+
+export default class Expedicao {
+
+    tabelado = () =>{
+       const logisticos = localStorage.getItem(LOGISTICA)
+       return JSON.parse(logisticos)
+    }
+
+    salvar = (logistico) =>{
+      let logisticos = localStorage.getItem(LOGISTICA)
+      if(!logisticos){
+        logisticos = []
+      }else{
+        logisticos = JSON.parse(logisticos)
+      }
+
+      logisticos.push(logistico)
+      localStorage.setItem( LOGISTICA, JSON.stringify(logisticos))
+    }
+}
+
+
+
+
+
+
+
+			=== src/components/consulta.css ===
+
+
+.table{
+  margin-top: -8px;
+  text-align: center;
+  background: linear-gradient(45deg, gold 45%, yellow 55%);
+  height: 50px;
+  padding: 2%;
+}
+.tabela{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.registro{
+  border: 3px solid black;
+  border-radius: 5px;
+  font-family: fantasy;
+}
+.cabecalho{
+  background: linear-gradient(45deg, red 45%, darkred 55%);
+  color: white;
+  font-size: larger;
+
+
+
+	
+
+			=== src/components/consulta.js ===
+
+
+import React, {Component} from 'react'
+import './Consulta.css'
+
+import DB from './db'
+
+export default class Consulta extends Component{
+    constructor(){
+      super()
+      this.Banco = new DB()
+    }
+
+    state = {
+      logisticos : []
+    }
+
+ componentDidMount = () =>{
+    const logisticos = this.Banco.tabelado()
+    this.setState({
+      logisticos
+    })
+ }
+
+      render(){
+          return(
+              <React.Fragment>
+                  <h2 className="table">registro de pedidos</h2>
+                  <div className="tabela">
+                  <table className="registro" border="1px"> 
+                        <thead className="cabecalho">
+                                <tr>
+                                    <td>nome</td>
+                                    <td>email</td>
+                                    <td>produto</td>
+                                    <td>preço</td>
+                                    <td>endereço</td>
+                                    <td>status</td>
+                                </tr>
+                        </thead>
+
+                        <tbody>
+                            {
+                              this.state.logisticos.map( (e,index) => {
+                                 return(
+                                        <tr key={index}>
+                                          <td>{e.nome}</td>
+                                          <td>{e.email}</td>
+                                          <td>{e.produto}</td>
+                                          <td>{e.preco}</td>
+                                          <td>{e.endereco}</td>
+                                          <td>{e.status}</td>
+                                </tr>
+                                 )
+                              })
+                            }
+                        </tbody>
+                  </table>
+                  </div>
+              </React.Fragment>
+          )  
+      }
+}
+
+
+
+
+
+				=== src/App.css ===
+
+
+body{
+  margin: 0;
+  background-color: whitesmoke;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+  background: linear-gradient(45deg, gold 45%, yellow 55%);
+  margin-top: -22px;
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.store{
+  margin-top: 4%;
+  text-shadow: 1px 1px 1px white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form{
+  height: 20em;
+}
+.linha1{
+  margin-top: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.linha2{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.put1{
+  margin-left: 2%;
+  height: 5em;
+  width: 45%;
+}
+.put2{
+ margin-right: 2%; 
+ height: 5em;
+ width: 45%;
+}
+.put3{
+  margin-top: 40px;
+  margin-left: 2%;
+  width: 95.5%;
+  height: 5em;
+}
+.put1,.put2,.put3{
+  outline:solid blanchedalmond 1px;
+  border-radius: 6px;
+}
+.check{
+  margin-top:40px;
+  margin-left: 2%;
+  width: 50%;
+  height: 2em;
+  outline:solid blanchedalmond 1px;
+}
+.enviar{
+  margin-left:22%;
+  margin-right:3%;
+  height: 10%;
+  width: 8em;
+  background: linear-gradient(45deg, green 45%, darkgreen 55%);
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 3px black;
+
+  transition-property: box-shadow ;
+  transition-duration: 0.5s;
+}
+.enviar:hover{
+   box-shadow: 1px 1px 1px black;
+}
+.limpar{
+  height: 10%;
+  width: 8em;
+  background: linear-gradient(45deg, red 45%, darkred 55%);
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 3px black;
+
+  transition-property: box-shadow ;
+  transition-duration: 0.5s;
+}
+.limpar:hover{
+   box-shadow: 1px 1px 1px black;
+}
+
+@media(max-width:700px){
+    .linha1,.linha2{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .put1,.put2{
+      margin:0;
+      width: 80%;
+    }
+    .put2{
+      margin-top: 20px;
+    }
+    .put3{
+      margin:0;
+      margin-top: 20px;
+      margin-left: 9%;
+      margin-right: 38px;
+      width: 81%;
+    }
+    .check{
+      margin-left: 25%;
+    }
+    .enviar, .limpar{
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+					=== src/App.js ===
+
+
+
+
+import React, { Component } from "react"
+import './App.css'
+
+import DB from './components/db'
+import Tabela from './components/consulta'
+
+export default class App extends Component {
+  constructor(){
+    super()
+    this.Banco = new DB()
+  }
+
+  state={
+    nome:'',
+    email:'',
+    produto:'',
+    preco: 0,
+    endereco:'',
+    status:[]
+  }
+
+  limpar = () =>{
+    this.setState({
+    nome:'',
+    email:'',
+    produto:'',
+    preco: 0,
+    endereco:'',
+    status:[]
+    })
+  }
+
+ enviar = (e) =>{
+   let valor = e.target.value
+   let nome = e.target.name
+   this.setState({
+     [nome]:valor
+   })
+ }
+
+ submeter = () =>{
+   let info = {
+    nome:this.state.nome,
+    email:this.state.email,
+    produto:this.state.produto,
+    preco: this.state.preco,
+    endereco:this.state.endereco,
+    status:this.state.status
+   }
+   this.Banco.salvar(info)
+   this.limpar()
+ }
+
+  render() {
+    return (
+      <div>
+          <div className="header">
+              <h1 className="store">CD 04  - Salvador</h1>
+          </div>      
+
+          <div className="form">
+                <div className="linha1">
+                  <input className="put1"
+                    name="nome"
+                    placeholder="insira o nome do cliente ..."
+                    type="text"
+                    value={this.state.nome}
+                    onChange={this.enviar}/>
+                  <input className="put2"
+                    name="email"
+                    placeholder="insira o email do cliente ..."
+                    type="text"
+                    value={this.state.email}
+                    onChange={this.enviar}/>
+                </div>
+                
+                <div className="linha2">
+                  <input className="put1"
+                    name="produto"
+                    placeholder="insira o nome do item em compra ..."
+                    type="text"
+                    value={this.state.produto}
+                    onChange={this.enviar}/>
+                  <input className="put2"
+                    name="preco"
+                    placeholder="insira o preço do item em compra ..."
+                    type="number"
+                    value={this.state.preco}
+                    onChange={this.enviar}/>
+                </div>
+
+                <input className="put3"
+                    name="endereco"
+                    placeholder="insira o endereco de destino da compra ..."
+                    type="text"
+                    value={this.state.endereco}
+                    onChange={this.enviar}/>
+
+                <select className="check"
+                  name="status"
+                  value={this.state.status}
+                  onChange={this.enviar} >
+                    <option>estado do pedido ...</option>
+                    <option>aprovado</option>
+                    <option>negado</option>
+                    <option>pendente</option>
+                    <option>em análise</option>
+                </select>
+
+                <button className="enviar" onClick={this.submeter}>enviar</button>
+                <button className="limpar" onClick={this.limpar}>limpar</button>
+          </div>
+          <br/>
+           <br/>
+            <br/>
+              <hr/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <hr/>
+             <Tabela/>
+      </div>
+    );
+  }
+}
+
