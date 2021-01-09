@@ -206,6 +206,7 @@ body{
   border-radius: 5px;
   outline: none;
   border: none;
+  cursor: pointer;
   box-shadow: 3px 3px 3px black;
 
   transition-property: box-shadow ;
@@ -222,6 +223,7 @@ body{
   border-radius: 5px;
   outline: none;
   border: none;
+  cursor: pointer;
   box-shadow: 3px 3px 3px black;
 
   transition-property: box-shadow ;
