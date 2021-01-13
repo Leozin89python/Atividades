@@ -1,0 +1,23 @@
+this.mutants = [
+    {name:'Ororo monroe',country:' Africa of south'},
+    {name:'Logan',country:'Canada'},
+    {name:'Sebastian shawn',country:'Germany'},
+    {name:'Jean Grey', country:'USA'}
+    ]
+    
+CIA = this.mutants.map(list =>{
+    return  list.name =='Kurt Wagner'? list.name : 'find all then!' 
+})
+control = () => this.mutants.forEach(list => {
+    console.log(list)
+})
+findOne = () => {
+    return (
+        this.mutants.forEach((list,index) =>{
+           console.log(list.name && index == 2 ? list.name : 'catch!' ) 
+           })
+    )
+}
+console.log(CIA)
+control()
+findOne()
