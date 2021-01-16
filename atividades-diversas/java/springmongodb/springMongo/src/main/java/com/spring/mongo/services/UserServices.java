@@ -1,11 +1,13 @@
 package com.spring.mongo.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.spring.mongo.domain.User;
+import com.spring.mongo.dto.UserDTO;
 import com.spring.mongo.repository.UserRepository;
 import com.spring.mongo.service.exception.ObjectNotFoundException;
 
@@ -18,11 +20,17 @@ public class UserServices {
 	public List<User> findAll(){
 		return repo.findAll(); 
 	}
-  /*
+  
 	public User findById(String id) {
-		User user = repo.findOne(id);
-		if(user == null) {
-			throw new  ObjectNotFoundException("usuário não encontrado");
+		Optional<User> obj = repo.findById(id);
+		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
 		}
-	} */
+	
+	public User insert(User obj)	{
+		return repo.insert(obj);
+	}
+	
+	public User fromDTO(UserDTO objDTO) {
+		return new User( objDTO.getId(), objDTO.getName(), objDTO.getEmail());
+	}
 }
