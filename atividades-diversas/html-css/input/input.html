@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+   	<style>
+     	*{
+		background-color:whitesmoke;
+		font-family:fantasia;
+		margin:25px;
+		
+	 }
+     body{
+		display:flex;
+		flex-direction:column;
+	 }
+   button{
+		height:30px;
+		width:60px;
+		margin-left:91%;
+		margin-top:-20px;
+		border-radius:8px;
+		background:linear-gradient(97deg, green 45%, darkgreen 55%);
+		box-shadow:3px 3px 3px rgba(0,0,0,0.7);
+		color:whitesmoke;
+		outline:none;
+		border:none;
+
+	        /*transform-property:box-shadow,background;
+		transform-duration:2s; */
+	 }
+ button:hover{
+		background:linear-gradient(97deg, red 45%, darkred 55%);
+		box-shadow:1px 1px 1px rgba(0,0,0,0.7);
+		}
+     </style> 
+   </head>
+    <body>
+	<input name="put" id="person" type="text" placeholder="name"/>
+	<button type="submit" onClick="namedInTable(event)" >press</button>
+        <input id="tempo" type="date" placeholder="name" />
+ 	<input type="color" placeholder="name" />
+ 	<input type="radio" placeholder="name" />
+	<input type="time" placeholder="name" />
+     <script>
+  	alert('Im Online');
+	
+	focu = e => e = document.getElementById('person').onFocus
+		
+
+	named = () =>	{
+		
+	        var people = document.getElementById('person').value;
+		console.log(people);
+		document.body.innerHTML = people;
+		alert(people);
+	}
+	namedInTable = () =>{
+		 var people = document.getElementById('person').value;
+		
+		 var table = document.createElement('li');
+		 var body = document.querySelector('body');
+			
+		 body.appendChild(table)
+		 focu()
+	}
+   </script>
+  </body>
+</html>
