@@ -30,6 +30,23 @@ public class UserServices {
 		return repo.insert(obj);
 	}
 	
+	public void delete(String id)	{
+		findById(id);
+		repo.deleteById(id);
+	}
+	
+	public User update(User obj) {
+		/*Optional<User> newObj = repo.findById(obj.getId());*/
+		User newObj = findById(obj.getId());
+		updateData(newObj, obj);
+		return repo.save(newObj);
+	} 
+	
+	private void updateData(User newObj, User obj) {
+		newObj.setName(obj.getName());
+		newObj.setEmail(obj.getEmail());
+	}
+
 	public User fromDTO(UserDTO objDTO) {
 		return new User( objDTO.getId(), objDTO.getName(), objDTO.getEmail());
 	}
