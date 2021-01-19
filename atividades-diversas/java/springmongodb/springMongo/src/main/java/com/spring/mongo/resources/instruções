@@ -1,3 +1,6 @@
 esta classe trata-se dos endpoints da aplicação
 onde há uma comunicação entre a API do nosso
-sistema.
+sistema.(UserResources)
+
+esta classe faz uma consulta de postagem
+a partir de um determinado id.(PostResources)

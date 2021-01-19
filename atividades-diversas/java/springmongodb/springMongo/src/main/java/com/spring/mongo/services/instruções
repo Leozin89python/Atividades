@@ -1,0 +1,5 @@
+esta classe é responsável pelo CRUD (UserService)
+da aplicação.
+
+esta outra é responsável por obter um POST (PostService)
+aninhado ao usuário obtido.
