@@ -1,0 +1,6 @@
+esta classe trata a instanciação dos objetos
+de domínio da aplicação e seus respectivos repositórios 
+que envocados os repositórios
+a partir dos construtores
+enviam os objetos de dominio ao endpoint 
+e consequentemente o instanciam no banco de dados.

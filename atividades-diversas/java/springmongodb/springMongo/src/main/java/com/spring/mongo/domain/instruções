@@ -1,0 +1,4 @@
+ambas são as classes de domínio a serem tratadas e suas
+informações persistidas no banco de dados, percorrendo
+todos os atributos, métodos e classes necessários ao
+longo da aplicação.

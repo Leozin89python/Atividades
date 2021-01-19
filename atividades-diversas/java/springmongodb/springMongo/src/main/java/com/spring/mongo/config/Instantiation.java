@@ -13,6 +13,7 @@ import com.spring.mongo.dto.AuthorDTO;
 import com.spring.mongo.repository.PostRepository;
 import com.spring.mongo.repository.UserRepository;
 
+
 public class Instantiation implements CommandLineRunner{
 
 	@Autowired

@@ -1,0 +1,4 @@
+estas classes instanciam o banco de dados e enviam os 
+objetos de dominio  ao mesmo(banco de dados - mongo no caso)
+utilizando os serviços internos da api do prórpio
+mongoDb, assim se persisti as informações no database
