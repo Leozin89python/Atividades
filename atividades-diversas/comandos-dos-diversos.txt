@@ -880,4 +880,103 @@ ations
   Visit https://yarnpkg.com/en/docs/cli/ to learn more about Yarn.
 
 
-C:\Users\Mendes>
+
+
+			comandos ipconfig:
+
+
+
+	
+Microsoft Windows [versão 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Todos os direitos reservados.
+
+ipconfig -h
+
+Erro: linha de comando não reconhecida ou incompleta.
+
+USO:
+    ipconfig [/allcompartments] [/? | /all |
+                                 /renew [adapter] | /release [adapter] |
+                                 /renew6 [adapter] | /release6 [adapter] |
+                                 /flushdns | /displaydns | /registerdns |
+                                 /showclassid adapter |
+                                 /setclassid adapter [classid] |
+                                 /showclassid6 adapter |
+                                 /setclassid6 adapter [classid] ]
+
+onde
+    adaptador           Nome da conexão
+                     (caracteres curinga * e ? permitidos; consulte exemplos)
+
+    Opções:
+       /?               Exibe esta mensagem de ajuda
+       /all             Exibe informações completas sobre configuração.
+       /release         Libera o endereço IPv4 para o adaptador especificado.
+       /release6        Libera o endereço IPv6 para o adaptador especificado.
+       /renew           Renova o endereço IPv4 para o adaptador especificado.
+       /renew6          Renova o endereço IPv6 para o adaptador especificado.
+       /flushdns        Limpa o cache do DNS Resolver.
+       /registerdns     Atualiza todas as concessões de DHCP e registra
+                        novamente nomes DNS
+       /displaydns      Exibe o conteúdo do Cache do DNS Resolver.
+       /showclassid     Exibe todas as Ids de classe dhcp permitidas para o
+                        adaptador.
+       /setclassid      Modifica a id. de classe dhcp.
+       /showclassid6    Exibe todas as Ids de classe DHCP IPv6 permitidas
+                        para o adaptador.
+       /setclassid6     Modifica a id de classe DHCP IPv6.
+
+
+O padrão é exibir apenas o endereço IP, a máscara de sub-rede e
+o gateway padrão para cada adaptador limitado ao TCP/IP.
+
+Para Release e Renew, se nenhum nome de adaptador for especificado,
+as concessões de endereços IP para todos os adaptadores limitados ao TCP/IP
+serão liberadas ou renovadas.
+
+Para Setclassid e Setclassid6, se nenhuma ClassId for especificada, ClassId
+será removida.
+
+Exemplos:
+    > ipconfig                       ... Mostra informações
+    > ipconfig /all                  ... Mostra informações detalhadas
+    > ipconfig /renew                ... renova todos os adaptadores
+    > ipconfig /renew EL*            ... renova qualquer conexão cujo nome
+                                         seja iniciado por EL
+    > ipconfig /release *Con*        ... libera todas as conexões
+                                         correspondentes, por exemplo,
+                                         "Conexão de Área Local" ou
+                                         "Conexão de Área Local 2"
+    > ipconfig /allcompartments      ... Mostra informações sobre todos os
+                                         compartimentos
+    > ipconfig /allcompartments /all ... Mostra informações detalhadas sobre
+                                         todos os compartimentos
+
+
+
+
+
+
+
+
+
+
+			comandos tracert:
+
+
+Uso: tracert [-d] [-h nmax_saltos] [-j lst_hosts] [-w tempo_limite]
+             [-R] [-S srcaddr] [-4] [-6] destino
+
+Opções:
+    -d                 Não resolver endereços para nomes de hosts.
+    -h nmax_saltos     Número máximo de saltos para a procura do destino.
+    -j lst_hosts       Rota ampliada de origens usada com a lista lst_hosts
+                       (só IPv4).
+    -w tempo_limite    Tempo de espera em milissegundos para cada resposta.
+    -R                 Traça caminho de transmissão e retransmissão (só IPv6).
+    -S srcaddr         Endereço de origem para uso só (IPv6).
+    -4                 Força usando IPv4.
+    -6                 Força usando IPv6.
+
+
+
