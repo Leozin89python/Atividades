@@ -1,0 +1,56 @@
+		
+			
+			
+			===== Revisão/base de conhecimento em redes =====
+
+
+	equipamentos:
+	
+		- hub
+		- switch/switch-multilayer
+		- router/roteador
+		- firewall
+		- cable/cabeamento
+	
+	camadas:
+		
+		- modelo OSI
+		- modelo TCP/IP
+	
+	
+	PDU:
+		tipos de dados de informação tráfegados/encapsulados:
+
+		camada(s) 5 - 7  = data
+		camada(s) 4 	 = segments
+		camada(s) 3	 = packets
+		camada(s) 2	 = frames
+		camada(s) 1	 = bits
+	
+  	topologia ccna Cisco:
+		2 tiers:
+			core/distribution:	 nivel acima/mesmo nivel ambos(collapse)
+			acesso/access :		 nivel mais baixo
+		3 tiers *:
+			
+			core : 				nivel acima
+			distribuição/distribution:	nivel central
+			acesso/access :			nivel mais baixo
+
+
+	
+	confirmar a pronuncia/escrita*
+		
+		
+
+
+	
+	
+
+
+
+
+
+
+
+proxy: 		https://pt.proxyservers.pro/

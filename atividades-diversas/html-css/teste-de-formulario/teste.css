@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    margin: 55px 0px;
+    padding: 25px;
+    background: linear-gradient(107deg, goldenrod 45%, yellow 65%);
+    font-weight: 1000;
+    font-family: fantasy;
+    text-shadow: 2px 2px 2px red;
+    box-shadow:  3px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+#formulary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#name,#age,#sex,#date{
+    margin: 3px;
+    height: 25px;
+    width: 280%;
+    outline: none;
+    border: solid 0.5px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;  
+    padding: 5px;  
+}
+#date{
+    margin-bottom: 30px;
+}
+#button{
+    margin-left: 240%;
+    margin-bottom: 3px;
+    height: 25px;
+    width: 75px;
+    border: solid 0.5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    border-radius: 4px;
+    color: red;
+    background: linear-gradient(107deg, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 55%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    
+}
+#button:hover{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+#buttonClear{
+    margin-left: 240%;
+    margin-bottom: 60px;
+    height: 25px;
+    width: 75px;
+    border: solid 0.5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    border-radius: 4px;
+    color:whitesmoke;
+    background: linear-gradient(107deg, red 45%, darkred 55%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+#tableFor,#tableHeadFor,#tableBodyFor{
+    border: solid 0.5px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding: 5px;
+}
+#tableFor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: large;
+}
+#tableHeadFor{
+    font-weight: 1000;
+    font-family: fantasy;
+    text-shadow: 2px 1px 1px red;
+    font-size: xx-large;
+    background: linear-gradient(105deg, rgba(0,0,0,0.3) 45%, rgba(0,0,0,0.7) 55%);
+}
+

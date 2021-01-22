@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="teste.css">
+    <title>Application&copy;</title>
+</head>
+<body>
+    <h1 id="title">formulary&copy;</h1>
+
+    <form id="formulary" action="">
+        <input id="name" type="text" name="nameForm"/>
+        <input id="age" type="number" name="ageForm"/>
+        <input id="sex" type="text" name="sexForm"/>
+        <input id="date" type="date" name="dateForm"/>
+        <input id="button" type="submit" onclick="render(event)"/>
+        <button id="buttonClear" type="submit" onclick="onClear(event)">limpar</button>
+    </form>
+
+  
+
+    <table id="tableFor">
+        <thead id="tableHeadFor">
+            <tr>
+                <th id="nameTable">name</th>
+                <th id="ageTable">age</th>
+                <th id="sexTable">sex</th>
+                <th id="dateTable">date</th>
+            </tr>
+        </thead>
+        <tbody id="tableBodyFor">
+            <th value="nameTable"></th>
+            <th value="ageTable"></th>
+            <th value="sexTable"></th>
+            <th value="dateTable"></th>
+        </tbody>
+    </table>
+    <script src="/teste.js">
+
+    </script>
+</body>
+</html>
