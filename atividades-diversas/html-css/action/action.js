@@ -104,16 +104,16 @@ total = (price,quantity) =>   {
 
 
 teste = () =>   {
-    console.log('mostrou')
+		console.log('mostrou')
 }
 
 showTotalTest = () =>   {
 
-    let total = document.getElementById('total')
-    total.value = teste()
-    
-    console.log(total.value)
-    alert
+		let total = document.getElementById('total')
+		total.value = teste()
+		
+		console.log(total.value)
+		alert
 }
 
 window.onloadstart = showTotalTest()
@@ -135,17 +135,17 @@ window.onloadstart = showTotalTest()
 
 testeComParametros = ( price, quantity ) => {
 
- price = document.getElementById('price')
- quantity = document.getElementById('quantity') 
- price.value = 0
- quantity.value = 0
- console.log(price)
- console.log(quantity)
+		 price = document.getElementById('price')
+		 quantity = document.getElementById('quantity') 
+		 price.value = 0
+		 quantity.value = 0
+		 console.log(price)
+		 console.log(quantity)
 }
 showTotalTestComParametros = () =>{
-    let total = document.getElementById('total')
-    total.value = testeComParametros()
-    console.log(total.value)
+		let total = document.getElementById('total')
+		total.value = testeComParametros()
+		console.log(total.value)
 }
 document.oninput = showTotalTestComParametros()
 
@@ -180,16 +180,16 @@ document.oninput = showTotalTestComParametros()
 
 testeComParametros1 = ( price, quantity ) => {
 
-    price = document.getElementById('price').value
-    quantity = document.getElementById('quantity').value 
-    console.log(price)
-    console.log(quantity)
+		price = document.getElementById('price').value
+		quantity = document.getElementById('quantity').value 
+		console.log(price)
+		console.log(quantity)
             }
 showTotalTestComParametros1 = () =>{
-    let total = document.getElementById('total')
-    total.value = testeComParametros1()
-    console.log(total.value)       
-            }
+		let total = document.getElementById('total')
+		total.value = testeComParametros1()
+		console.log(total.value)       
+				}
 
  document.addEventListener('change', change =>{
 
@@ -215,7 +215,7 @@ showTotalTestComParametros1 = () =>{
                          * 
                          */
 
-/*
+
                         
 testeComParametros2 = ( price, quantity ) => {
 
@@ -226,10 +226,10 @@ testeComParametros2 = ( price, quantity ) => {
                                     }
 
 mult = () => {
-    price = document.getElementById('price')
-    quantity = document.getElementById('quantity') 
-    multiplying = price.value * quantity.value
-    console.log(multiplying)
+		price = document.getElementById('price')
+		quantity = document.getElementById('quantity') 
+		multiplying = price.value * quantity.value
+		console.log(multiplying)
 }
 
 showTotalTestComParametros2 = () =>{
@@ -248,7 +248,7 @@ showTotalTestComParametros2 = () =>{
                              
                      })
     
-                     */
+                /*     */
 
                         /**teste de sincronização e chamada-4 */
 
