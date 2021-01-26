@@ -1,0 +1,42 @@
+import React ,{Component} from 'react'
+import './Header.css'
+
+import Linkedin from '../../assets/linkedin.png'
+import Git from '../../assets/github.png'
+
+export default class Header extends Component{
+    render(){
+        return(
+            <div className="componentHeader">
+
+                    <div className="componentHeaderLargeToSmallDevices">
+                    <div>
+                        <img className="componentHeaderImage" />
+                    </div>
+
+                    
+                    <a className="componentHeaderSocialPerson" href="https://www.facebook.com/profile.php?id=100039697203669" target="blank">
+                            <h2 className="componentHeaderSocialPersonName" >Leonardo Sousa</h2>
+                        </a>
+
+                    <div className="componentHeaderSocial">
+                        <a className="componentHeaderSocialIn" href="https://linkedin.com/in/leonardo-dos-santos-sousa-238651173" target="blank">
+                            <img className="componentHeaderSocialIn" src={Linkedin} />
+                        </a>
+
+                        <a className="componentHeaderSocialGit" href="https://github.com/Leozin89python" target="blank">
+                            <img className="componentHeaderSocialGit" src={Git}/>
+                        </a>
+                    </div>
+                </div>
+
+                    <div className=" componentHeaderLittleDevices">
+                       <h1>
+                           hi
+                       </h1>
+                    </div>
+
+            </div>
+        )
+    }
+}

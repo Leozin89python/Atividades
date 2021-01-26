@@ -1,0 +1,107 @@
+.componentHeaderLargeToSmallDevices{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    background: linear-gradient(95deg, rgba(0,0,0,0.5) 35%,rgba(0,0,0,0.3) 65%);
+    width: 100%;
+    height: 100%;
+}
+.componentHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    background: linear-gradient(95deg, rgba(0,0,0,0.5) 35%,rgba(0,0,0,0.3) 65%);
+}
+.componentHeaderImage{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: rgba(0,0,0,0.2);
+    border: solid whitesmoke 2px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px 10px;
+    margin-left: 60px;
+}
+.componentHeaderSocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 30%;
+}
+.componentHeaderSocialPerson,.componentHeaderSocialIn,.componentHeaderSocialGit{
+    padding: 5px;
+    text-decoration: none;
+    font-size: larger;
+}
+.componentHeaderSocialPerson{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+}
+.componentHeaderSocialPersonName{
+    justify-self: center;
+    width: 100%;
+    margin-left: 60%;
+}
+.componentHeaderSocialGit{
+    margin-right: 10px;
+}
+.componentHeaderSocialIn,.componentHeaderSocialGit{
+    height: 50px;
+    width: 50px;
+}
+.componentHeaderLittleDevices{
+    display: none;
+}
+
+
+@media(max-width:320px){
+  .componentHeaderLargeToSmallDevices{
+    display: none;
+  }
+}
+@media(max-width:500px){
+    .componentHeaderSocialPersonName{
+        font-size: 25px;
+    }
+    .componentHeaderImage{
+        width: 60px;
+        height: 60px;
+        margin: 40px 20px;
+    }
+}
+@media(max-width:620px){
+    .componentHeaderSocialPersonName{
+        width: 100%;
+        margin-left: 40%;
+    }
+    .componentHeaderSocial{
+        visibility: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-width: 30px;
+    }
+}
+@media(max-width:700px){
+    .componentHeaderSocial{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        width: 20%;
+    }
+}
