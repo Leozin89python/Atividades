@@ -10,31 +10,38 @@ export default class Header extends Component{
             <div className="componentHeader">
 
                     <div className="componentHeaderLargeToSmallDevices">
-                    <div>
-                        <img className="componentHeaderImage" />
-                    </div>
+                        <div>
+                            <img className="componentHeaderImage" />
+                        </div>
 
-                    
-                    <a className="componentHeaderSocialPerson" href="https://www.facebook.com/profile.php?id=100039697203669" target="blank">
-                            <h2 className="componentHeaderSocialPersonName" >Leonardo Sousa</h2>
-                        </a>
+                        
+                        <a className="componentHeaderSocialPerson" href="https://www.facebook.com/profile.php?id=100039697203669" target="blank">
+                                <h2 className="componentHeaderSocialPersonName" >Leonardo Sousa</h2>
+                            </a>
 
-                    <div className="componentHeaderSocial">
-                        <a className="componentHeaderSocialIn" href="https://linkedin.com/in/leonardo-dos-santos-sousa-238651173" target="blank">
-                            <img className="componentHeaderSocialIn" src={Linkedin} />
-                        </a>
+                        <div className="componentHeaderSocial">
+                            <a className="componentHeaderSocialIn" href="https://linkedin.com/in/leonardo-dos-santos-sousa-238651173" target="blank">
+                                <img className="componentHeaderSocialIn" src={Linkedin} />
+                            </a>
 
-                        <a className="componentHeaderSocialGit" href="https://github.com/Leozin89python" target="blank">
-                            <img className="componentHeaderSocialGit" src={Git}/>
-                        </a>
-                    </div>
+                            <a className="componentHeaderSocialGit" href="https://github.com/Leozin89python" target="blank">
+                                <img className="componentHeaderSocialGit" src={Git}/>
+                            </a>
+                        </div>
                 </div>
 
-                    <div className=" componentHeaderLittleDevices">
-                       <h1>
-                           hi
-                       </h1>
-                    </div>
+                                {/**   Bloco de Responsividade   */}
+
+
+                <div className="componentHeaderLittleDevices">
+                    <a href="https://www.facebook.com/profile.php?id=100039697203669" target="blank">
+                        <h3 className="componentHeaderSocialPersonNameLittleDevices">Leonardo Sousa</h3>
+                    </a>
+                    <img className="componentHeaderImageLittleDevices" />
+                </div>
+
+
+                              {/**   Bloco de Responsividade   */}
 
             </div>
         )
