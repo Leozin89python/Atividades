@@ -1,0 +1,93 @@
+.ComponentContent{
+    margin-top: 100px;
+}
+
+.componentGalleryDescription{
+    margin-left: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.componentContentLargerToSmallDevices{
+    display: flex;
+    flex-direction: column;
+}
+.ComponentContentContent{
+    display: flex;
+    flex-direction: row;
+}
+.ComponentContentContentServicos,.ComponentContentContentMe{
+    width: 50%;
+    height: 800px; 
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.componentServiceCard,.componentMeCard{
+    border: 1px rgba(0,0,0,0.1) solid;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.4);
+    background: whitesmoke;
+    width: 80%;
+    height: 500px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 1px 1px 1px #00bfff;
+    color: rgba(0,0,0,0.3);
+}
+/* não funciona pelo fato de o body 
+não ser a sua tag pai */
+.componentServiceCard{
+    position: sticky;
+    top: 10px;
+}
+/** funciona porque é filho do body 
+e não está contido em nehum conteiner */
+.stick{
+    position: sticky;
+    top: 10px;
+    display: none;
+}
+.componentContentTitle{
+    background: rgba(0,0,0,0.3);
+    margin: 5px 5px;
+}
+.componentContentFooter{
+    background: black;
+    height: 300px;
+
+}
+.componentContentCopy{
+    background: black;
+    color: whitesmoke;
+}
+.componentContentLittleDevices{
+    display: none;
+}
+
+
+
+
+            /*    Àrea de Responsividade  */
+
+
+.componentContentLargerToSmallDevices{}
+
+.componentContentLittleDevices{}
+
+@media(max-width:320px){
+   
+    .ComponentContent{
+        margin-top: 30px;
+    }
+}
+@media(max-width:700px){
+    .ComponentContentContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .ComponentContentContentServicos,.ComponentContentContentMe{
+        width: 100%;
+    }
+}

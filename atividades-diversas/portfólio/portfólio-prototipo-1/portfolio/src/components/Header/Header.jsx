@@ -3,6 +3,7 @@ import './Header.css'
 
 import Linkedin from '../../assets/linkedin.png'
 import Git from '../../assets/github.png'
+import Me from '../../assets/eu.jpg'
 
 export default class Header extends Component{
     render(){
@@ -11,7 +12,7 @@ export default class Header extends Component{
 
                     <div className="componentHeaderLargeToSmallDevices">
                         <div>
-                            <img className="componentHeaderImage" />
+                            <img className="componentHeaderImage" src={Me}/>
                         </div>
 
                         
@@ -37,7 +38,7 @@ export default class Header extends Component{
                     <a href="https://www.facebook.com/profile.php?id=100039697203669" target="blank">
                         <h3 className="componentHeaderSocialPersonNameLittleDevices">Leonardo Sousa</h3>
                     </a>
-                    <img className="componentHeaderImageLittleDevices" />
+                    <img className="componentHeaderImageLittleDevices"  src={Me}/>
                 </div>
 
 
