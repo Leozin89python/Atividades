@@ -478,10 +478,10 @@ Storage options:
   cd.. 				sai de duas pastas
   cd.				sai de uma pasta
   cd  [caminho] 		acessa um determinado path
-  dir 				acessa um diretÛrio
-  tree 			        exibe a arvore de diretÛrios do windows
+  dir 				acessa um diret√≥rio
+  tree 			        exibe a arvore de diret√≥rios do windows
 
-  ctrl + c 			encerramento de serviÁo
+  ctrl + c 			encerramento de servi√ßo
 
 
 				
@@ -601,46 +601,46 @@ Storage options:
 
 
 
-Para obter mais informaÁıes sobre um comando especÌfico,
+Para obter mais informa√ß√µes sobre um comando espec√≠fico,
 digite HELP nome_do_comando
-ASSOC          Exibe ou modifica associaÁıes de extensıes de arquivo.
+ASSOC          Exibe ou modifica associa√ß√µes de extens√µes de arquivo.
 ATTRIB         Exibe ou altera atributos de arquivos.
-BREAK          Define ou limpa a verificaÁ„o estendida CTRL+C.
-BCDEDIT        Define propriedades no banco de dados de inicializaÁ„o para
-               controlar o carregamento da inicializaÁ„o.
+BREAK          Define ou limpa a verifica√ß√£o estendida CTRL+C.
+BCDEDIT        Define propriedades no banco de dados de inicializa√ß√£o para
+               controlar o carregamento da inicializa√ß√£o.
 CACLS          Exibe ou modifica listas de controle de acesso de arquivos.
 CALL           Chama um programa em lotes por meio de outro.
-CD             Exibe o nome do diretÛrio atual ou faz alteraÁıes nele.
-CHCP           Exibe ou define o n˙mero da p·gina de cÛdigo ativa.
-CHDIR          Exibe o nome do diretÛrio atual ou faz alteraÁıes nele.
-CHKDSK         Verifica um disco e exibe um relatÛrio de status.
-CHKNTFS        Exibe ou modifica a verificaÁ„o do disco na inicializaÁ„o.
+CD             Exibe o nome do diret√≥rio atual ou faz altera√ß√µes nele.
+CHCP           Exibe ou define o n√∫mero da p√°gina de c√≥digo ativa.
+CHDIR          Exibe o nome do diret√≥rio atual ou faz altera√ß√µes nele.
+CHKDSK         Verifica um disco e exibe um relat√≥rio de status.
+CHKNTFS        Exibe ou modifica a verifica√ß√£o do disco na inicializa√ß√£o.
 CLS            Limpa a tela.
-CMD            Inicia uma nova inst‚ncia do interpretador de comandos do
+CMD            Inicia uma nova inst√¢ncia do interpretador de comandos do
                Windows.
-COLOR          Define as cores padr„o do primeiro plano e do plano de fundo
+COLOR          Define as cores padr√£o do primeiro plano e do plano de fundo
                do console.
-COMP           Compara o conte˙do de dois arquivos ou grupos de arquivos.
-COMPACT        Exibe ou altera a compactaÁ„o de arquivos em partiÁıes NTFS.
-CONVERT        Converte volumes FAT em NTFS. N„o È possÌvel converter a
+COMP           Compara o conte√∫do de dois arquivos ou grupos de arquivos.
+COMPACT        Exibe ou altera a compacta√ß√£o de arquivos em parti√ß√µes NTFS.
+CONVERT        Converte volumes FAT em NTFS. N√£o √© poss√≠vel converter a
                unidade atual.
 COPY           Copia um ou mais arquivos para outro local.
 DATE           Exibe ou ajusta a data.
 DEL            Exclui um ou mais arquivos.
-DIR            Exibe uma lista de arquivos e subdiretÛrios em um diretÛrio.
-DISKCOMP       Compara o conte˙do de dois disquetes.
-DISKCOPY       Copia o conte˙do de um disquete para outro.
-DISKPART       Exibe ou configura propriedades de partiÁ„o de disco.
+DIR            Exibe uma lista de arquivos e subdiret√≥rios em um diret√≥rio.
+DISKCOMP       Compara o conte√∫do de dois disquetes.
+DISKCOPY       Copia o conte√∫do de um disquete para outro.
+DISKPART       Exibe ou configura propriedades de parti√ß√£o de disco.
 DOSKEY         Edita linhas de comando, volta a chamar comandos do Windows e
                cria macros.
 DRIVERQUERY    Exibe status e propriedades do driver de dispositivo atual.
 ECHO           Exibe mensagens ou ativa/desativa o eco de comandos.
-ENDLOCAL       Encerra a localizaÁ„o de alteraÁıes de ambiente em um arquivo
+ENDLOCAL       Encerra a localiza√ß√£o de altera√ß√µes de ambiente em um arquivo
                em lotes.
 ERASE          Exclui um ou mais arquivos.
 EXIT           Sai do programa CMD.EXE (interpretador de comandos).
 FC             Compara dois arquivos ou grupos de arquivos e exibe as
-               diferenÁas entre eles.
+               diferen√ßas entre eles.
 FIND           Procura uma cadeia de caracteres de texto em um ou mais
                arquivos.
 FINDSTR        Procura cadeias de caracteres em arquivos.
@@ -649,72 +649,72 @@ FOR            Executa um determinado comando para cada arquivo em um grupo
 FORMAT         Formata um disco para ser usado com o Windows.
 FSUTIL         Exibe ou configura as propriedades do sistema de arquivos.
 FTYPE          Exibe ou modifica os tipos de arquivo utilizados em
-               associaÁıes de extensıes de arquivo.
+               associa√ß√µes de extens√µes de arquivo.
 GOTO           Direciona o interpretador de comandos do Windows para uma
                linha identificada em um programa em lotes.
-GPRESULT       Exibe informaÁıes de diretiva de grupo para o computador ou
-               usu·rio.
+GPRESULT       Exibe informa√ß√µes de diretiva de grupo para o computador ou
+               usu√°rio.
 GRAFTABL       Permite que o Windows exiba um conjunto de caracteres
-               estendidos em modo gr·fico.
-HELP           Fornece informaÁıes de ajuda sobre comandos do Windows.
+               estendidos em modo gr√°fico.
+HELP           Fornece informa√ß√µes de ajuda sobre comandos do Windows.
 ICACLS         Exibir, modificar, fazer backup ou restaurar ACLs de
-               arquivos e diretÛrios.
+               arquivos e diret√≥rios.
 IF             Realiza processamento condicional em arquivos em lotes.
-LABEL          Cria, altera ou exclui o rÛtulo de volume de um disco.
-MD             Cria um diretÛrio.
-MKDIR          Cria um diretÛrio.
-MKLINK         Cria VÌnculos SimbÛlicos e Links FÌsicos
+LABEL          Cria, altera ou exclui o r√≥tulo de volume de um disco.
+MD             Cria um diret√≥rio.
+MKDIR          Cria um diret√≥rio.
+MKLINK         Cria V√≠nculos Simb√≥licos e Links F√≠sicos
 MODE           Configura um dispositivo do sistema.
-MORE           Exibe a saÌda fazendo pausa a cada tela.
-MOVE           Move um ou mais arquivos de um diretÛrio para outro diretÛrio.
-OPENFILES      Exibe arquivos abertos por usu·rios remotos para um
+MORE           Exibe a sa√≠da fazendo pausa a cada tela.
+MOVE           Move um ou mais arquivos de um diret√≥rio para outro diret√≥rio.
+OPENFILES      Exibe arquivos abertos por usu√°rios remotos para um
                compartilhamento de arquivo.
-PATH          Exibe ou define um caminho de pesquisa para arquivos execut·veis.
+PATH          Exibe ou define um caminho de pesquisa para arquivos execut√°veis.
 PAUSE          Suspende o processamento de um arquivo em lotes e exibe uma
                mensagem.
-POPD           Restaura o valor anterior do diretÛrio atual salvo por PUSHD.
+POPD           Restaura o valor anterior do diret√≥rio atual salvo por PUSHD.
 PRINT          Imprime um arquivo de texto.
 PROMPT         Altera o prompt de comando do Windows.
-PUSHD          Salva o diretÛrio atual e o altera em seguida.
-RD             Remove um diretÛrio.
-RECOVER        Recupera informaÁıes legÌveis de um disco defeituoso ou
+PUSHD          Salva o diret√≥rio atual e o altera em seguida.
+RD             Remove um diret√≥rio.
+RECOVER        Recupera informa√ß√µes leg√≠veis de um disco defeituoso ou
                danificado.
-REM            Grava coment·rios (observaÁıes) em arquivos em lotes ou no
+REM            Grava coment√°rios (observa√ß√µes) em arquivos em lotes ou no
                CONFIG.SYS.
 REN            Altera o nome de um ou mais arquivos.
 RENAME         Altera o nome de um ou mais arquivos.
 REPLACE        Substitui arquivos.
-RMDIR          Remove um diretÛrio.
-ROBOCOPY       Utilit·rio avanÁado para copiar arquivos e ·rvores de diretÛrio
-SET            Exibe, define ou remove vari·veis de ambiente do Windows.
-SETLOCAL       Inicia a localizaÁ„o de alteraÁıes de ambiente em um arquivo
+RMDIR          Remove um diret√≥rio.
+ROBOCOPY       Utilit√°rio avan√ßado para copiar arquivos e √°rvores de diret√≥rio
+SET            Exibe, define ou remove vari√°veis de ambiente do Windows.
+SETLOCAL       Inicia a localiza√ß√£o de altera√ß√µes de ambiente em um arquivo
                em lotes.
-SC             Exibe ou configura serviÁos (processos em segundo plano).
-SCHTASKS       Agenda a execuÁ„o de comandos e programas em um computador.
-SHIFT          Altera a posiÁ„o dos par‚metros substituÌveis em um arquivo em
+SC             Exibe ou configura servi√ßos (processos em segundo plano).
+SCHTASKS       Agenda a execu√ß√£o de comandos e programas em um computador.
+SHIFT          Altera a posi√ß√£o dos par√¢metros substitu√≠veis em um arquivo em
                lotes.
 SHUTDOWN       Permite o desligamento local ou remoto adequado do computador.
 SORT           Classifica a entrada.
 START          Inicia uma janela separada para executar um programa ou
                comando especificado.
 SUBST          Associa um caminho a uma letra de unidade.
-SYSTEMINFO     Exibe a configuraÁ„o e propriedades especÌficas da m·quina.
-TASKLIST       Exibe todas as tarefas em execuÁ„o no momento, inclusive
-               serviÁos.
-TASKKILL       Termina ou interrompe um processo ou aplicativo em execuÁ„o.
+SYSTEMINFO     Exibe a configura√ß√£o e propriedades espec√≠ficas da m√°quina.
+TASKLIST       Exibe todas as tarefas em execu√ß√£o no momento, inclusive
+               servi√ßos.
+TASKKILL       Termina ou interrompe um processo ou aplicativo em execu√ß√£o.
 TIME           Exibe ou ajusta a hora do sistema.
-TITLE          Define o tÌtulo da janela para uma sess„o do CMD.EXE.
-TREE           Exibe graficamente a estrutura de diretÛrios de uma unidade
+TITLE          Define o t√≠tulo da janela para uma sess√£o do CMD.EXE.
+TREE           Exibe graficamente a estrutura de diret√≥rios de uma unidade
                ou caminho.
-TYPE           Exibe o conte˙do de um arquivo de texto.
-VER            Exibe a vers„o do Windows.
-VERIFY         Faz com que o Windows verifique se os arquivos est„o gravados
+TYPE           Exibe o conte√∫do de um arquivo de texto.
+VER            Exibe a vers√£o do Windows.
+VERIFY         Faz com que o Windows verifique se os arquivos est√£o gravados
                corretamente em um disco.
-VOL            Exibe o rÛtulo de volume e o n˙mero de sÈrie de um disco.
-XCOPY          Copia arquivos e ·rvores de diretÛrios.
-WMIC           Exibe informaÁıes WMI em um comando interativo do shell.
+VOL            Exibe o r√≥tulo de volume e o n√∫mero de s√©rie de um disco.
+XCOPY          Copia arquivos e √°rvores de diret√≥rios.
+WMIC           Exibe informa√ß√µes WMI em um comando interativo do shell.
 
-Para obter mais informaÁıes sobre ferramentas, consulte a referÍncia a linhas de
+Para obter mais informa√ß√µes sobre ferramentas, consulte a refer√™ncia a linhas de
  comando na ajuda online.
 
 
@@ -887,12 +887,12 @@ ations
 
 
 	
-Microsoft Windows [vers„o 6.1.7601]
+Microsoft Windows [vers√£o 6.1.7601]
 Copyright (c) 2009 Microsoft Corporation. Todos os direitos reservados.
 
 ipconfig -h
 
-Erro: linha de comando n„o reconhecida ou incompleta.
+Erro: linha de comando n√£o reconhecida ou incompleta.
 
 USO:
     ipconfig [/allcompartments] [/? | /all |
@@ -905,20 +905,20 @@ USO:
                                  /setclassid6 adapter [classid] ]
 
 onde
-    adaptador           Nome da conex„o
+    adaptador           Nome da conex√£o
                      (caracteres curinga * e ? permitidos; consulte exemplos)
 
-    OpÁıes:
+    Op√ß√µes:
        /?               Exibe esta mensagem de ajuda
-       /all             Exibe informaÁıes completas sobre configuraÁ„o.
-       /release         Libera o endereÁo IPv4 para o adaptador especificado.
-       /release6        Libera o endereÁo IPv6 para o adaptador especificado.
-       /renew           Renova o endereÁo IPv4 para o adaptador especificado.
-       /renew6          Renova o endereÁo IPv6 para o adaptador especificado.
+       /all             Exibe informa√ß√µes completas sobre configura√ß√£o.
+       /release         Libera o endere√ßo IPv4 para o adaptador especificado.
+       /release6        Libera o endere√ßo IPv6 para o adaptador especificado.
+       /renew           Renova o endere√ßo IPv4 para o adaptador especificado.
+       /renew6          Renova o endere√ßo IPv6 para o adaptador especificado.
        /flushdns        Limpa o cache do DNS Resolver.
-       /registerdns     Atualiza todas as concessıes de DHCP e registra
+       /registerdns     Atualiza todas as concess√µes de DHCP e registra
                         novamente nomes DNS
-       /displaydns      Exibe o conte˙do do Cache do DNS Resolver.
+       /displaydns      Exibe o conte√∫do do Cache do DNS Resolver.
        /showclassid     Exibe todas as Ids de classe dhcp permitidas para o
                         adaptador.
        /setclassid      Modifica a id. de classe dhcp.
@@ -927,29 +927,29 @@ onde
        /setclassid6     Modifica a id de classe DHCP IPv6.
 
 
-O padr„o È exibir apenas o endereÁo IP, a m·scara de sub-rede e
-o gateway padr„o para cada adaptador limitado ao TCP/IP.
+O padr√£o √© exibir apenas o endere√ßo IP, a m√°scara de sub-rede e
+o gateway padr√£o para cada adaptador limitado ao TCP/IP.
 
 Para Release e Renew, se nenhum nome de adaptador for especificado,
-as concessıes de endereÁos IP para todos os adaptadores limitados ao TCP/IP
-ser„o liberadas ou renovadas.
+as concess√µes de endere√ßos IP para todos os adaptadores limitados ao TCP/IP
+ser√£o liberadas ou renovadas.
 
 Para Setclassid e Setclassid6, se nenhuma ClassId for especificada, ClassId
-ser· removida.
+ser√° removida.
 
 Exemplos:
-    > ipconfig                       ... Mostra informaÁıes
-    > ipconfig /all                  ... Mostra informaÁıes detalhadas
+    > ipconfig                       ... Mostra informa√ß√µes
+    > ipconfig /all                  ... Mostra informa√ß√µes detalhadas
     > ipconfig /renew                ... renova todos os adaptadores
-    > ipconfig /renew EL*            ... renova qualquer conex„o cujo nome
+    > ipconfig /renew EL*            ... renova qualquer conex√£o cujo nome
                                          seja iniciado por EL
-    > ipconfig /release *Con*        ... libera todas as conexıes
+    > ipconfig /release *Con*        ... libera todas as conex√µes
                                          correspondentes, por exemplo,
-                                         "Conex„o de ¡rea Local" ou
-                                         "Conex„o de ¡rea Local 2"
-    > ipconfig /allcompartments      ... Mostra informaÁıes sobre todos os
+                                         "Conex√£o de √Årea Local" ou
+                                         "Conex√£o de √Årea Local 2"
+    > ipconfig /allcompartments      ... Mostra informa√ß√µes sobre todos os
                                          compartimentos
-    > ipconfig /allcompartments /all ... Mostra informaÁıes detalhadas sobre
+    > ipconfig /allcompartments /all ... Mostra informa√ß√µes detalhadas sobre
                                          todos os compartimentos
 
 
@@ -967,16 +967,52 @@ Exemplos:
 Uso: tracert [-d] [-h nmax_saltos] [-j lst_hosts] [-w tempo_limite]
              [-R] [-S srcaddr] [-4] [-6] destino
 
-OpÁıes:
-    -d                 N„o resolver endereÁos para nomes de hosts.
-    -h nmax_saltos     N˙mero m·ximo de saltos para a procura do destino.
+Op√ß√µes:
+    -d                 N√£o resolver endere√ßos para nomes de hosts.
+    -h nmax_saltos     N√∫mero m√°ximo de saltos para a procura do destino.
     -j lst_hosts       Rota ampliada de origens usada com a lista lst_hosts
-                       (sÛ IPv4).
+                       (s√≥ IPv4).
     -w tempo_limite    Tempo de espera em milissegundos para cada resposta.
-    -R                 TraÁa caminho de transmiss„o e retransmiss„o (sÛ IPv6).
-    -S srcaddr         EndereÁo de origem para uso sÛ (IPv6).
-    -4                 ForÁa usando IPv4.
-    -6                 ForÁa usando IPv6.
+    -R                 Tra√ßa caminho de transmiss√£o e retransmiss√£o (s√≥ IPv6).
+    -S srcaddr         Endere√ßo de origem para uso s√≥ (IPv6).
+    -4                 For√ßa usando IPv4.
+    -6                 For√ßa usando IPv6.
 
 
 
+netsh -h
+combos de comando:
+
+observa a configura√ß√£o de rede [nome da configuracao da interface]
+
+netsh interface ipv4 show config
+
+
+
+
+
+defini o endere√ßo IP
+
+netsh interface ipv4 set adress name="nome-da-conex√£o" [static ou dhcp] [ip mask gateway]
+
+Ex:
+netsh interface ipv4 set adress name="conex√£o local" static 192.168.150.15  255.255.255.0  192.168.150.1
+
+
+
+
+defini o endere√ßo DNS
+
+netsh interface ipv4 set dnsserver name="nome-da-conex√£o"  static [endere√ßo-IP] *router ou gateway padr√£o
+
+Ex:
+netsh interface ipv4 set dnsserver name="conex√£o local"  static 192.168.150.1
+===========================================================
+
+arp -h
+
+==========================================================
+pathping [Ip adress]
+
+Ex: pathping 192.168.150.7
+===========================================================
