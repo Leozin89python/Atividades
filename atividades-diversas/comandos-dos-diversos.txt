@@ -997,18 +997,14 @@ defini o endereço IP
 netsh interface ipv4 set adress name="nome-da-conexão" [static ou dhcp] [ip mask gateway]
 
 Ex:
-netsh interface ipv4 set adress name="conexão local" static 192.168.150.15  255.255.255.0  
-
-192.168.150.1
+netsh interface ipv4 set adress name="conexão local" static 192.168.150.15  255.255.255.0  192.168.150.1
 
 
 
 
 defini o endereço DNS
 
-netsh interface ipv4 set dnsserver name="nome-da-conexão"  static [endereço-IP] *router ou 
-
-gateway padrão
+netsh interface ipv4 set dnsserver name="nome-da-conexão"  static [endereço-IP] *router ou gateway padrão
 
 Ex:
 netsh interface ipv4 set dnsserver name="conexão local"  static 192.168.150.1
@@ -1038,3 +1034,56 @@ attrib +s +h [caminho]
 Ex:
 attrib +s +h g:\Users\dev\java
 attrib +s +h g:\Users\dev\desktop\java
+
+regedit
+
+=============================================================
+	
+a partir destes comandos, você terá total conhecimento dos atributos de 
+cada comando.	
+
+geral:
+help
+
+
+
+
+redes:
+arp /?
+netsh /?
+arp /?
+ping /?
+pathping /?
+netstat /?
+tracert /?
+ipconfig /?
+
+
+
+infra-estrutura/computador:
+shutdown /?
+attrib /?
+color /?
+taskkill /?
+tree /?
+md /?
+cd /?
+rd /?
+move /?
+copy /?
+diskpart /?
+chkdsk /?
+mem /?
+print /?
+start /?
+ren /?
+echo /?
+cls /?
+
+
+
+externos:
+
+npm /?
+
+
